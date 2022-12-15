@@ -6,14 +6,14 @@ import RecipeData from "./RecipeData"
 
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
-    const createRecipe = (newRecipe) =>   //Do you need those curly brackets? newRecipe is an object, but try both
+    const createRecipe = (newRecipe) =>  
     setRecipes((currentRecipes) => [
     ...currentRecipes,
       newRecipe
     ]);
   const deleteRecipe = (indexToDelete) =>
     setRecipes((currentRecipes) =>
-    currentRecipes.filter((recipe, index) => index !== indexToDelete)  //I am concerned that recipe is not read here...
+    currentRecipes.filter((recipe, index) => index !== indexToDelete)  
     );    
 
   return (

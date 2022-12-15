@@ -22,8 +22,7 @@ function RecipeCreate({createRecipe}) {
     createRecipe(formData);  
     setFormData({ ...initialFormState });
   };
-  // ADDED: When the form is submitted, a new recipe should be created, and the form contents cleared.
-  // ADDED: Add the required submit and change handlers
+ 
   
   return (
     <form name="create" onSubmit={handleSubmit}>
